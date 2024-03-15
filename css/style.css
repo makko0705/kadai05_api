@@ -1,0 +1,134 @@
+@charset "UTF-8";
+body {
+  text-align: center;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.serch_area {
+  display: flex;
+  width: 800px;
+  height: 60px;
+  margin: 0 auto 25px;
+  align-items: center;
+  font-size: 17px;
+}
+
+#input_text {
+  width: 100%;
+  height: 60px;
+  border: 5px solid #22a6c1;
+  margin-right: 10px;
+  padding: 0 15px;
+}
+
+#search {
+  cursor: pointer;
+  background: #22a6c1;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+  width: 140px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#keep {
+  cursor: pointer;
+  border: 5px solid #22a6c1;
+  background: #f5f34e;
+  color: #22a6c1;
+  line-height: 50px;
+  height: 60px;
+  width: 140px;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#allremove {
+  cursor: pointer;
+  border: 5px solid #22a6c1;
+  color: #22a6c1;
+  line-height: 20px;
+  padding: 5px 0;
+  height: 60px;
+  width: 140px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+#content,
+#keep_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-gap: 25px;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  border: 5px solid #22a6c1;
+  width: 250px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px 20px;
+}
+
+.thumb {
+  margin-bottom: 15px;
+}
+.thumb img {
+  box-shadow: rgba(34, 166, 193, 0.2) 0px 0px 5px 0px;
+}
+
+/* 最後のコンテンツを左寄せにする指定 */
+.item:after {
+  content: "";
+  display: block;
+  width: 250px;
+  /* .boxに指定したwidthと同じ幅を指定する */
+  height: 0;
+}
+
+.bookname {
+  font-weight: bold;
+}
+
+.description {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  padding: 34px 15px;
+  line-height: 1.8;
+  background: rgba(34, 166, 193, 0.8);
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: bold;
+}
+.description .text {
+  display: -webkit-box; /* 必須 */
+  -webkit-box-orient: vertical; /* 必須 */
+  -webkit-line-clamp: 8; /* 行数を制限 */
+  overflow: hidden; /* はみ出た部分を非表示 */
+  text-align: left;
+}
+
+.save {
+  position: absolute;
+  right: 16px;
+  top: -4px;
+}
+
+.save_yellow {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
