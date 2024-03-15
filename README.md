@@ -11,7 +11,7 @@ KEEPで保存した書籍を見る、
 ALLREMOVEで保存した書籍のデータを消す
 
 ## ③DEMO
-（任意）デプロイしている場合はURLを記入
+https://makko0705.github.io/kadai05_api/index.html
 
 
 ## ④工夫した点・こだわった点
